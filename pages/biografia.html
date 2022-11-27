@@ -4,36 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>Welcome</title>
 </head>
 <body>
-    <header>
-        <h1>BIENVENIDO A MI WEB</h1>
-        <nav>
-            <ul>
-                <li><a href="./pages/fotografia.html">FOTOGRAFÍA</a></li>
-                <li><a href="./pages/musica.html">MÚSICA</a></li>
-                <li><a href="./pages/biografia.html">SOBRE MÍ</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="landing">
-        <article>
-            <h2>NO TEMAS</h2>
-            <p>La navegación a través de esta web es <b>relativamente sencilla.</b></p>
-            <p>Utiliza los enlaces que encontrarás en lo alto de la página para acceder a sus múltiples secciones.</p>
-            <p><b>Espero que te diviertas.</b></p>
-        </article>
-        <article class="center">
-            <h3>¿Quieres jugar un poco?</h3>
-            <p><a href="./pages/juego"></a>¡CLARO!</p>
-        </article>
-    </main>
-    <footer>
-        <section class="center">
-            <a class="logo" href="https://www.instagram.com/zhaosmanak/" target="_blank"><img src="./assets/images/ig.png" alt="logo instagram" width="50"></a>
-        </section>
-    </footer>
+    <div class="container">
+        <div class="content">
+            <header>
+                <h1>SOBRE MÍ</h1>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">INICIO</a></li>
+                        <li><a href="../pages/musica.html">MÚSICA</a></li>
+                        <li><a href="../pages/fotografia.html">FOTOGRAFÍA</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="bio">
+                    <article class="bio-content">
+                        <img src="../assets/images/blackstar.jpg" alt="Estrella negra" class="left">
+                        <div class="bio-text">
+                        <h2>Algunas cosas...</h2>
+                        <p>merece la pena saberlas y otras no tanto. Nací durante la primavera de 1991, o eso me han contado. No tengo constancia de un primer recuerdo, pero sí de que crecer en los 90 - en mi caso - fue una experiencia que atesoro con cariño.</p>
+                        <p>Atesoro con cariño, entre otras muchas cosas, esperar el próximo número de mi revista favorita (la Nintendo Acción); jugar a los tazos y la peonza; visitar cada viernes el Blockbuster, el templo del contenido multimedia. Son momentos sencillos, aún despreocupados, cargados de inocencia.</p>
+                        <p>Aunque ejemplar de pequeño, fui como tantos otros un adolescente problemático. En algún lugar entre la niñez y la juventud fue fermentándose un aroma que aún se deja oler de vez en cuando.</p>
+                    </article>
+            </main>
+        </div>
+        <footer>
+            <section class="center">
+            <a class="logo" href="https://www.instagram.com/zhaosmanak/" target="_blank"><img src="../assets/images/ig.png" alt="logo instagram" width="50"></a>
+            </section>
+        </footer>
+    </div>
 </body>
 </html>

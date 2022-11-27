@@ -1,18 +1,19 @@
 *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
 }
-
-html {
-    height: 100%;
-}
  
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
     margin: 0px;
 }
 
+.container{
+    position: relative;
+    min-height: 100vh;
+}
+
+.content{
+    padding-bottom: 75px;
+}
 header{
     display: flex;
     flex-direction: column;
@@ -28,9 +29,9 @@ footer{
     justify-content: center;
     align-items: center;
     height: 75px;
-    border-top: 5px;
-    border-style: solid;
-    position:absolute; bottom:0;
+    border-top: 5px solid black;
+    position:absolute; 
+    bottom:0;
     width: 100%;
     margin: 0px;
     background-color: white;
@@ -41,8 +42,19 @@ footer{
 .landing{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.intro-text{
+    font-size: larger;
+    padding: 10vh;
+}
+
+main.landing>img{
+    margin-top: 30px;
+    padding: 20px;
+    width: 100px
 }
 
 .foto{
@@ -92,23 +104,40 @@ a:hover{
     background-color: cadetblue;
 }
 
-.center {
-    text-align: center;
-    margin: 10px;
-}
-
 a.ig{
     display: inline-block;
     height: 50px;
 }
 
-article{
+.intro-text{
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 50px;
     padding-right: 50px;
 }
 
-h1{
-    margin: 10px 0px;
+.bio-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;    
 }
+
+.left{
+    float: left;
+    margin: 0 20px 20px 0;
+    width: 150px;
+    height: 150px;
+}
+
+h1{
+    margin: 10px 10px;
+}
+
+.center {
+    text-align: center;
+    margin: 10px;
+}
+
