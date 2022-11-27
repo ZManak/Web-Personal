@@ -1,7 +1,17 @@
 *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
 }
- 
+
+@font-face {
+    font-family: 'Glitch';
+    src: url("../RubikDistressed-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Alien';
+    src: url("../AbyssinicaSIL-Regular.ttf");
+}
+
 body {
     margin: 0px;
 }
@@ -37,8 +47,6 @@ footer{
     background-color: white;
 }
 
-
-
 .landing{
     display: flex;
     flex-direction: column;
@@ -47,20 +55,21 @@ footer{
 }
 
 .intro-text{
-    font-size: larger;
+    font-size: 16px;
     padding: 10vh;
 }
 
 main.landing>img{
-    margin-top: 30px;
     padding: 20px;
+    margin-bottom: 10px;
     width: 100px
 }
 
 .foto{
     display: flex;
     flex-wrap: wrap;
-    align-items:flex-start;
+    justify-content: center;
+    align-items:center;
     flex-direction: row;
     max-height: 100vh;
 }
@@ -75,12 +84,38 @@ main.landing>img{
 }
 
 .music {
-    height: 600px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content:space-between;
     align-items: center;
+}
+
+.playlist{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 95vw;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.songbox{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 20px 0px 20px 0px;
+    width: 97%;
+}
+
+.song{
+    width: 75%;
+}
+.songbox img{
+    width: 50px;
+    border-radius: 20%;
+    margin: 0px 20px 0px 0px;
 }
 
 header>nav>ul{
@@ -105,7 +140,7 @@ a:hover{
 }
 
 a.ig{
-    display: inline-block;
+   text-align: center;
     height: 50px;
 }
 
@@ -125,6 +160,10 @@ a.ig{
     padding: 20px;    
 }
 
+div.bio-text>p{
+    font-size: large;
+}
+
 .left{
     float: left;
     margin: 0 20px 20px 0;
@@ -133,11 +172,21 @@ a.ig{
 }
 
 h1{
-    margin: 10px 10px;
+    font-family: Glitch;
+    font-weight: lighter;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 20px;
 }
 
 .center {
     text-align: center;
-    margin: 10px;
+    margin: 10px 0px 15px 0px;
 }
 
+audio{
+    width: 100%;
+}
+
+#xeno{
+    font-family: Alien;
+}
