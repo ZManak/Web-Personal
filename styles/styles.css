@@ -4,12 +4,7 @@
 
 @font-face {
     font-family: 'Glitch';
-    src: url("../RubikDistressed-Regular.ttf");
-}
-
-@font-face {
-    font-family: 'Alien';
-    src: url("../AbyssinicaSIL-Regular.ttf");
+    src: url("../fonts/rubikglitch-regular.ttf")
 }
 
 body {
@@ -65,6 +60,18 @@ main.landing>img{
     width: 100px
 }
 
+.game{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.game>.center{
+    padding: 25px;
+}
+
 .foto{
     display: flex;
     flex-wrap: wrap;
@@ -79,8 +86,8 @@ main.landing>img{
     margin: 10px;
     border: 3px solid #000;
     box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
-    max-width: 23vw;
-    max-height: 16vw;
+    max-width: 40vw;
+    max-height: 17vh;
 }
 
 .music {
@@ -140,7 +147,7 @@ a:hover{
 }
 
 a.ig{
-   text-align: center;
+    text-align: center;
     height: 50px;
 }
 
@@ -187,6 +194,27 @@ audio{
     width: 100%;
 }
 
-#xeno{
-    font-family: Alien;
+.contacto{
+    display: flex;
+    flex-direction: column;
+}
+
+.centered-content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formulario{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    gap:10px;
+}
+
+#link-juego{
+    color: black;
 }
