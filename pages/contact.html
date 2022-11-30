@@ -4,28 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <title>Welcome</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Contact</title>
 </head>
 <body>
-    <header>
-        <h1>BIENVENIDO A MI WEB</h1>
+    <div class="container">
+        <div class="content">
+        <header>
+        <h1>CONTACTO</h1>
         <nav>
             <ul>
-                <li><a href="./pages/fotografia.html">FOTOGRAFÍA</a></li>
-                <li><a href="./pages/musica.html">MÚSICA</a></li>
-                <li><a href="./pages/biografia.html">SOBRE MÍ</a></li>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="./fotografia.html">FOTO</a></li>
+                <li><a href="./musica.html">MÚSICA</a></li>
+                <li><a href="./biografia.html">SOBRE MÍ</a></li>
             </ul>
         </nav>
     </header>
-    <main class="contact">
-        
-        
+    
+    <main class="centered-content">
+        <section class="intro-text">
+            <h2>¿Quieres preguntarme algo?</h2>
+            <p>Dispara. Sólo tienes que dejar tu email si quieres una respuesta privada, o un alias si no te importa que responda de forma anónima en alguna de mis Stories. Si no introduces ninguno de los dos, lo ignoraré.</p>
+        </section>
+
+        <div class="centered-content">
+        <section class="formulario">
+            <form action="#">
+                <label for="alias">Alias:</label>
+                <input type="text" id="alias" name="alias" placeholder="cómo debería referirme a ti?">
+
+                <label for="email">Mail:</label>
+                <input type="email" id="email" name="email" placeholder="tu correo...">
+
+                <label for="message">Mensaje:</label>
+                <textarea name="message" id="message" cols="25" rows="5" placeholder="Pregunta, o cuéntame lo que quieras vaya..."></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+        </div>    
+
     </main>
     <footer>
         <section class="center">
-            <a class="ig" href="https://www.instagram.com/zhaosmanak/" target="_blank"><img src="./assets/images/ig.png" alt="logo instagram" width="50"></a>
+            <a class="ig" href="https://www.instagram.com/zhaosmanak/" target="_blank"><img src="../assets/images/icons/ig.png" alt="logo instagram" width="50"></a>
         </section>
     </footer>
+    </div>
+    </div>
 </body>
 </html>
