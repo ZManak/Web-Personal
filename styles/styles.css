@@ -262,8 +262,7 @@ audio{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        
-        width: 75%;
+        width: 75vw;
         gap:10px;
     }
 }
