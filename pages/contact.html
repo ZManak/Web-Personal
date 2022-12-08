@@ -31,7 +31,7 @@
 
         <div class="centered-content">
         <section class="contacto">
-            <form class="formulario" action="#" target="_blank" method="post">
+            <form class="formulario" id="formulario" action="/action_page.php" target="_blank" method="post">
                 <label for="alias">Alias:</label>
                 <input type="text" id="alias" name="alias" placeholder="whatever..."><br>
 
@@ -58,6 +58,16 @@
                     <input type="radio" id="pc" name="platform" value="pc">
                     <label for="pc">PC Master Race</label>
                 </div>
+                <br>
+                <div>
+                    <label for="pelis"><b>Tus pelifavoritas de Studio Ghibli:</b></label><br><br>
+                    <select name="pelis" id="pelis" multiple> <!--size="4" multiple: multiples opciones y tamaño 4 valores antes de scroll -->
+                        <option value="totoro">Mi vecino Totoro</option>
+                        <option value="mononoke">La princesa Mononoke</option>
+                        <option value="chihiro">El viaje de Chihiro</option>
+                        <option value="castillo">El castillo ambulante</option>
+                    </select>
+                    </div><br>
 
                 <input type="submit" value="Enviar"><br>
             </form>
